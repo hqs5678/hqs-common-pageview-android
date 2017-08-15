@@ -46,8 +46,6 @@ public class QPageView extends RecyclerView{
         snapHelper.attachToRecyclerView(this);
 
         this.setBackgroundColor(Color.DKGRAY);
-
-
     }
 
     @Override
