@@ -39,10 +39,6 @@ public class TestActivity extends AppCompatActivity {
                 LayoutInflater inflater = LayoutInflater.from(parent.getContext());
                 View view = inflater.inflate(R.layout.view_holder_test, null);
 
-                ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(0, 0);
-                layoutParams.width = (int) ScreenUtils.screenW(parent.getContext());
-                layoutParams.height = (int) ScreenUtils.screenH(parent.getContext());
-                view.setLayoutParams(layoutParams);
                 return new TestViewHolder(view);
             }
 
