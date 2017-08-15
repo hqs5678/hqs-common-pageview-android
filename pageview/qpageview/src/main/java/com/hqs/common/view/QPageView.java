@@ -19,7 +19,7 @@ import android.view.View;
 
 public class QPageView extends RecyclerView{
 
-    private int pageMargin = 50;
+    private int separatorWidth = 50;
     private PagerSnapHelper snapHelper;
 
     public QPageView(Context context) {
@@ -60,13 +60,13 @@ public class QPageView extends RecyclerView{
 
             int pos = getChildAdapterPosition(view);
             if (pos < getAdapter().getItemCount() - 1){
-                outRect.set(0, 0, pageMargin, 200);
+                outRect.set(0, 0, separatorWidth, 200);
             }
         }
     }
 
-    public void setPageMargin(int pageMargin) {
-        this.pageMargin = pageMargin;
+    public void setSeparatorWidth(int separatorWidth) {
+        this.separatorWidth = separatorWidth;
     }
 
     public void setSeparatorColor(int color) {
@@ -97,7 +97,7 @@ public class QPageView extends RecyclerView{
                 offset = 0;
             }
             else{
-                offset = pageMargin;
+                offset = separatorWidth;
             }
             int childCenter = helper.getDecoratedStart(targetView)
                     + ((helper.getDecoratedMeasurement(targetView) - offset) / 2);
