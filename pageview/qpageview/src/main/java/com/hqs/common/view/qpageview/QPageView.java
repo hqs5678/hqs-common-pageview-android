@@ -1,4 +1,4 @@
-package com.hqs.common.view;
+package com.hqs.common.view.qpageview;
 
 import android.content.Context;
 import android.graphics.Color;

@@ -9,14 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.hqs.common.utils.ActivityUtil;
 import com.hqs.common.utils.DensityUtils;
-import com.hqs.common.utils.ScreenUtils;
-import com.hqs.common.view.QPageView;
+import com.hqs.common.view.qpageview.QPageView;
 
 public class TestActivity extends AppCompatActivity {
 

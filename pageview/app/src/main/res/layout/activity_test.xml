@@ -7,7 +7,7 @@
     tools:context="com.hqs.common.view.pageview.TestActivity">
 
 
-    <com.hqs.common.view.QPageView
+    <com.hqs.common.view.qpageview.QPageView
         android:id="@+id/pageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
