@@ -30,7 +30,7 @@ public class TestActivity extends AppCompatActivity {
         ActivityUtil.hideActionBar(this);
 
         pageView = (QPageView) findViewById(R.id.pageView);
-        pageView.setSeparatorColor(Color.rgb(6, 85, 32));
+        pageView.setSeparatorColor(Color.rgb(15, 9, 7));
         pageView.setSeparatorWidth(DensityUtils.dp2px(this, 22));
 
         pageView.setAdapter(new RecyclerView.Adapter<TestViewHolder>() {
