@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -61,12 +62,21 @@ public class TestActivity extends AppCompatActivity {
     class TestViewHolder extends RecyclerView.ViewHolder {
 
         ListView lv;
+        ImageView back;
 
         public TestViewHolder(View itemView) {
             super(itemView);
             lv = itemView.findViewById(R.id.list);
 
             itemView.setBackgroundColor(Color.WHITE);
+
+            back = itemView.findViewById(R.id.back);
+            back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    TestActivity.this.finish();
+                }
+            });
 
             lv.setAdapter(new BaseAdapter() {
                 @Override
